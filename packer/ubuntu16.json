@@ -1,0 +1,28 @@
+{
+"builders": [
+{
+"type": "yandex",
+"service_account_key_file": "D:/pack/key.json",
+"folder_id": "b1gs45353ng3nfua4bgs",
+"source_image_family": "ubuntu-1604-lts",
+"subnet_id": "e9b7buvh230kkn7i9b6k",
+"use_ipv4_nat": true,
+"image_name": "reddit-base-{{timestamp}}",
+"image_family": "reddit-base",
+"ssh_username": "ubuntu",
+"platform_id": "standard-v1"
+}
+],
+"provisioners": [
+{
+"type": "shell",
+"script": "C:/Users/Jin/Documents/GitHub/JinNT96_infra/packer/scripts/install_ruby.sh",
+"execute_command": "sudo {{.Path}}"
+},
+{
+"type": "shell",
+"script": "C:/Users/Jin/Documents/GitHub/JinNT96_infra/packer/scripts/install_mongodb.sh",
+"execute_command": "sudo {{.Path}}"
+}
+]
+}
