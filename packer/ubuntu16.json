@@ -2,7 +2,7 @@
 "builders": [
 {
 "type": "yandex",
-"service_account_key_file": "D:/pack/key.json",
+"service_account_key_file": "keys/key.json",
 "folder_id": "b1gs45353ng3nfua4bgs",
 "source_image_family": "ubuntu-1604-lts",
 "subnet_id": "e9b7buvh230kkn7i9b6k",
