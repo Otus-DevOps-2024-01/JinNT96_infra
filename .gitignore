@@ -1,1 +1,5 @@
-*.tfstate \ n*.tfstate.*.backup \n*.tfstate.backup\n*.tfvars\n.terraform/
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+*.tfvars
+.terraform/
