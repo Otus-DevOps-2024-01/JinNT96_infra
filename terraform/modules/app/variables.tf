@@ -4,7 +4,7 @@ variable public_key_path {
 }
 variable app_disk_image {
     description = "Disk image for reddit app"
-    default     = "reddit-base-1715282161"
+    default = "reddit-app-base"
 }
 variable subnet_id {
   type        = string
