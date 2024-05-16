@@ -1,16 +1,15 @@
 variable public_key_path {
+  description = "../../../.ssh/ubuntu.pub"
   type        = string
-  description = "Path to the public key used for ssh access"
 }
+
 variable app_disk_image {
-    description = "Disk image for reddit app"
-    default = "reddit-base-ruby-1715626451"
+  description = "Disk image for reddit app"
+  default     = "reddit-app-base"
+  type        = string
 }
+
 variable subnet_id {
+  description = "MySubnetID"
   type        = string
-  description = "Subnet"
-}
-variable private_key_path {
-  type        = string
-  description = "Path to the private key used for ssh access"
 }
